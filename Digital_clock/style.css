@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* căn giữa trang */
+    display: flex;
+    justify-content: center;  /*căn giữa theo chiều cao*/
+    align-items: center;  /*căn giữa theo chiều rộng*/
+    background: linear-gradient(to bottom left, rgb(41, 75, 210) ,rgb(215, 96, 215));
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.clock_container{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(0 ,0 , 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock{
+    font-size: 50px;
+}
