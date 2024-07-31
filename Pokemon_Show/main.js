@@ -12,7 +12,7 @@ for( let i=1; i<61; i++)
     parentDiv.appendChild(newImg);
 
     const newSpan = document.createElement("span");
-    newSpan.innerText = `${i}`
+    newSpan.innerText = `${i}`;
     parentDiv.prepend(newSpan);
 }
 console.log(contain);
