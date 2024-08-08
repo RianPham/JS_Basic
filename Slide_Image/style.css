@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    width: 100vw
+}
+.panel{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    flex: 1;    /* 89 */
+    margin: 10px;
+    position: relative;  
+    transition: 2s;  /* 97.1 */
+}
+.panel h3{
+    font-size: 25px;
+    margin: 0;
+    position: absolute;  /* 87 */
+    top: 20px;
+    left: 10px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: none;
+}
+.panel.active{
+    flex: 6;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 5s;
+}
+/*Ẩn bớt ptu khi màn hình thu nhỏ*/
+@media(max-width: 720px){   /* 96.2 */
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
